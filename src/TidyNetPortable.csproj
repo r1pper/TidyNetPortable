@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BB81593F-52BC-4EA0-AB07-F5722F913BE4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tidy</RootNamespace>
+    <AssemblyName>TidyNetPortable</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile95</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dom\DomException.cs" />
+    <Compile Include="Dom\IAttr.cs" />
+    <Compile Include="Dom\ICDATASection.cs" />
+    <Compile Include="Dom\ICharacterData.cs" />
+    <Compile Include="Dom\IComment.cs" />
+    <Compile Include="Dom\IDocument.cs" />
+    <Compile Include="Dom\IDocumentFragment.cs" />
+    <Compile Include="Dom\IDocumentType.cs" />
+    <Compile Include="Dom\IDomImplementation.cs" />
+    <Compile Include="Dom\IElement.cs" />
+    <Compile Include="Dom\IEntity.cs" />
+    <Compile Include="Dom\IEntityReference.cs" />
+    <Compile Include="Dom\INamedNodeMap.cs" />
+    <Compile Include="Dom\INode.cs" />
+    <Compile Include="Dom\INodeList.cs" />
+    <Compile Include="Dom\INotation.cs" />
+    <Compile Include="Dom\IProcessingInstruction.cs" />
+    <Compile Include="Dom\IText.cs" />
+    <Compile Include="Dom\NodeType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Core\AlignAttrCheck.cs" />
+    <Compile Include="Core\AnchorCheckTableCheckAttribs.cs" />
+    <Compile Include="Core\AreaCheckTableCheckAttribs.cs" />
+    <Compile Include="Core\AttrCheckImpl.cs" />
+    <Compile Include="Core\Attribute.cs" />
+    <Compile Include="Core\AttributeTable.cs" />
+    <Compile Include="Core\AttVal.cs" />
+    <Compile Include="Core\BoolAttrCheck.cs" />
+    <Compile Include="Core\CaptionCheckTableCheckAttribs.cs" />
+    <Compile Include="Core\CharEncoding.cs" />
+    <Compile Include="Core\CheckAttribsImpl.cs" />
+    <Compile Include="Core\Clean.cs" />
+    <Compile Include="Core\ClsStreamInImpl.cs" />
+    <Compile Include="Core\ContentModel.cs" />
+    <Compile Include="Core\Dict.cs" />
+    <Compile Include="Core\DocType.cs" />
+    <Compile Include="Core\DomAttrImpl.cs" />
+    <Compile Include="Core\DomAttrMapImpl.cs" />
+    <Compile Include="Core\DomCdataSectionImpl.cs" />
+    <Compile Include="Core\DomCharacterDataImpl.cs" />
+    <Compile Include="Core\DomCommentImpl.cs" />
+    <Compile Include="Core\DomDocumentImpl.cs" />
+    <Compile Include="Core\DomDocumentTypeImpl.cs" />
+    <Compile Include="Core\DomElementImpl.cs" />
+    <Compile Include="Core\DomNodeImpl.cs" />
+    <Compile Include="Core\DomNodeListByTagNameImpl.cs" />
+    <Compile Include="Core\DomNodeListImpl.cs" />
+    <Compile Include="Core\DomProcessingInstructionImpl.cs" />
+    <Compile Include="Core\DomTextImpl.cs" />
+    <Compile Include="Core\Entity.cs" />
+    <Compile Include="Core\EntityTable.cs" />
+    <Compile Include="Core\HrCheckTableCheckAttribs.cs" />
+    <Compile Include="Core\HtmlCheckAttribs.cs" />
+    <Compile Include="Core\HtmlVersion.cs" />
+    <Compile Include="Core\IAttrCheck.cs" />
+    <Compile Include="Core\ICheckAttribs.cs" />
+    <Compile Include="Core\IdAttrCheck.cs" />
+    <Compile Include="Core\ImgCheckTableCheckAttribs.cs" />
+    <Compile Include="Core\InlineStack.cs" />
+    <Compile Include="Core\IParser.cs" />
+    <Compile Include="Core\Lexer.cs" />
+    <Compile Include="Core\LinkCheckTableCheckAttribs.cs" />
+    <Compile Include="Core\MapCheckTableCheckAttribs.cs" />
+    <Compile Include="Core\MessageLevel.cs" />
+    <Compile Include="Core\MutableBoolean.cs" />
+    <Compile Include="Core\MutableInteger.cs" />
+    <Compile Include="Core\MutableObject.cs" />
+    <Compile Include="Core\NameAttrCheck.cs" />
+    <Compile Include="Core\Node.cs" />
+    <Compile Include="Core\Out.cs" />
+    <Compile Include="Core\OutImpl.cs" />
+    <Compile Include="Core\ParserImpl.cs" />
+    <Compile Include="Core\PPrint.cs" />
+    <Compile Include="Core\Report.cs" />
+    <Compile Include="Core\ScriptAttrCheck.cs" />
+    <Compile Include="Core\ScriptCheckAttribs.cs" />
+    <Compile Include="Core\StreamIn.cs" />
+    <Compile Include="Core\StreamInImpl.cs" />
+    <Compile Include="Core\Style.cs" />
+    <Compile Include="Core\StyleCheckTableCheckAttribs.cs" />
+    <Compile Include="Core\StyleProp.cs" />
+    <Compile Include="Core\TableCellCheckTableCheckAttribs.cs" />
+    <Compile Include="Core\TableCheckAttribs.cs" />
+    <Compile Include="Core\TagCollection.cs" />
+    <Compile Include="Core\Tidy.cs" />
+    <Compile Include="Core\TidyMessage.cs" />
+    <Compile Include="Core\TidyMessageCollection.cs" />
+    <Compile Include="Core\TidyOptions.cs" />
+    <Compile Include="Core\UrlAttrCheck.cs" />
+    <Compile Include="Core\ValignAttrCheck.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

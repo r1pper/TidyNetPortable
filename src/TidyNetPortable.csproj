@@ -120,7 +120,7 @@
     <Compile Include="Core\TableCellCheckTableCheckAttribs.cs" />
     <Compile Include="Core\TableCheckAttribs.cs" />
     <Compile Include="Core\TagCollection.cs" />
-    <Compile Include="Core\Tidy.cs" />
+    <Compile Include="Core\HtmlTidy.cs" />
     <Compile Include="Core\TidyMessage.cs" />
     <Compile Include="Core\TidyMessageCollection.cs" />
     <Compile Include="Core\TidyOptions.cs" />
